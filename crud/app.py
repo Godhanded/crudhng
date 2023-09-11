@@ -12,7 +12,7 @@ def create_app():
         setup_db(app)
     CORS(app)
 
-    @app.route("/")
+    @app.route("/api")
     def get_all_persons():
         try:
             persons = query_all(Person)

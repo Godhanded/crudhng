@@ -59,7 +59,7 @@ $ python3 run.py
 $ pip install requests pytest
 
 # Run the tests in test_crud.py
-$ pytest test_crud.py 
+$ pytest test_crud.py -v
 ```
 [click for test_crud.py file](test_crud.py)
 

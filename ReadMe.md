@@ -61,6 +61,7 @@ $ pip install requests pytest
 # Run the tests in test_crud.py
 $ pytest test_crud.py 
 ```
+[click for test_crud.py file](test_crud.py)
 
 <br>
 
@@ -196,16 +197,16 @@ The API will return 2 error types, with diffreent descriptions when requests fai
 <hr>
 
 ### Create Operation
-<a href=""><img src="./Images/Create.png"></a>
+<a href="https://github.com/Godhanded/crudhng/blob/main/Images/Create.png"><img src="./Images/Create.png"></a>
 
 ### Read Operation
-<a href=""><img src="./Images/Read.png"></a>
+<a href="https://github.com/Godhanded/crudhng/blob/main/Images/Read.png"><img src="./Images/Read.png"></a>
 
 ### Update Operation
-<a href=""><img src="./Images/Update.png"></a>
+<a href="https://github.com/Godhanded/crudhng/blob/main/Images/Update.png"><img src="./Images/Update.png"></a>
 
 ### Delete Operation
-<a href=""><img src="./Images/Delete.png"></a>
+<a href="https://github.com/Godhanded/crudhng/blob/main/Images/Delete.png"><img src="./Images/Delete.png"></a>
 
 ## Authors
 - [@Godhanded](https://github.com/Godhanded)

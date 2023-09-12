@@ -91,3 +91,24 @@ def test_delete_person():
     # try and get deleted person
     data = requests.get(BASE_URI + f"{id}")
     assert data.status_code == 404  # user not found
+
+def test_put_update_person():
+    """test perform update on name of person"""
+    # create a person and get user_id
+    data = (requests.post(BASE_URI, json={"name": "old name"})).json()
+    id, old_name = data["id"], data["name"]  # get id and name of created user to edit
+
+    # update person name
+    update_res = (requests.put(BASE_URI + f"/{id}", json={"name": "new name"})).json()
+
+    # get the user back
+    data = (requests.get(BASE_URI + f"/{id}")).json()
+    new_id, new_name = data["person"]["id"], data["person"]["name"]
+
+    assert update_res["message"] == "name updated"
+    assert id == new_id  # assert its same user
+    assert old_name != new_name  # assert old name and new name are different
+    assert new_name == "new name"  # assert it updated to the correct name
+    assert new_name == update_res["name"]
+    clean_up(id)
+

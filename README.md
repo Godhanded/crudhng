@@ -232,10 +232,10 @@ The API will return 2 error types, with diffreent descriptions when requests fai
 <a href="https://github.com/Godhanded/crudhng/blob/main/Images/Read.png"><img src="./Images/Read.png"></a>
 
 ### Update Operation
-<a href="https://github.com/Godhanded/crudhng/blob/main/Images/Update1.png"><img src="./Images/Update1.png"></a>
+<a href="https://github.com/Godhanded/crudhng/blob/main/Images/Update1.png"><img src="./Images/Update1.jpg"></a>
 
 
-
+<a href="https://github.com/Godhanded/crudhng/blob/main/Images/Update.png"><img src="./Images/Update.png"></a>
 
 ### Delete Operation
 <a href="https://github.com/Godhanded/crudhng/blob/main/Images/Delete.png"><img src="./Images/Delete.png"></a>

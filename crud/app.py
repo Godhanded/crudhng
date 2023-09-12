@@ -84,7 +84,7 @@ def create_app():
             print(e)
             abort(500)
 
-    @app.route("/api/<int:user_id>", methods=["PATCH"])
+    @app.route("/api/<int:user_id>", methods=["PATCH", "PUT"])
     def update_person(user_id):
         try:
             query = QuerySchema(user_id=user_id)

@@ -2,6 +2,7 @@
 
 ## Table Of Contents
 - [Set up server for Local Machine](#set-up-the-server-local)
+- [DataBase Info](#database-info)
 - [Base Uri/Live Deployment](#base-uri)
 - [Run API Tests](#run-api-tests)
 - [UML Class Diagram](#uml-class-diagram)
@@ -62,6 +63,12 @@ $ pip install requests pytest
 $ pytest test_crud.py -v
 ```
 [click for test_crud.py file](test_crud.py)
+
+### DataBase Info
+- Sqlite file database is used
+- SqlAlchemy ORM was used for db interactions
+- Sqlite file.db file is created in `/instance` directory when the server is run for the first time.
+- DataBase Models [click here](crud/models.py)
 
 <br>
 

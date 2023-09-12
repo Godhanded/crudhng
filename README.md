@@ -170,6 +170,28 @@ The API will return 2 error types, with diffreent descriptions when requests fai
 
 ---
 
+  `PUT '/api/${id}'`
+- Update or change name of person record
+- Path Parameter: `id`- integer id of person to update
+- Request Body: Json object containing
+```json
+ {
+    "name":"new name"
+ }
+```
+- Returns: JSON, message and person object containing name id and date created
+
+```json
+ {
+    "message": "name updated",
+    "id": 0,
+    "name":"new name"
+ }
+```
+*status code: 200*
+
+---
+
 <br>
 
 #### **Delete**
@@ -210,7 +232,10 @@ The API will return 2 error types, with diffreent descriptions when requests fai
 <a href="https://github.com/Godhanded/crudhng/blob/main/Images/Read.png"><img src="./Images/Read.png"></a>
 
 ### Update Operation
-<a href="https://github.com/Godhanded/crudhng/blob/main/Images/Update.png"><img src="./Images/Update.png"></a>
+<a href="https://github.com/Godhanded/crudhng/blob/main/Images/Update1.png"><img src="./Images/Update1.png"></a>
+
+
+
 
 ### Delete Operation
 <a href="https://github.com/Godhanded/crudhng/blob/main/Images/Delete.png"><img src="./Images/Delete.png"></a>
